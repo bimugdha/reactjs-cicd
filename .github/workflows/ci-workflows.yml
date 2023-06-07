@@ -1,5 +1,5 @@
 name: contineous integration
-on: workflow
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest

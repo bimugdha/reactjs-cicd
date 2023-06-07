@@ -9,9 +9,7 @@ jobs:
       - name: Install Nodejs
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-      - name : package update
-        run: npm update
+          node-version: 18          
       - name : install dependencies
         run: npm install got@latest
       - name : Run Test

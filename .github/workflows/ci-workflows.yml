@@ -17,6 +17,6 @@ jobs:
 deploy:
   needs: pahilo
   runs-on: ubuntu-latest
-    steps: 
-      - name: get code
-        uses: actions/checkout@v3
+  steps: 
+    - name: get code
+      uses: actions/checkout@v3

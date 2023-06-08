@@ -1,7 +1,7 @@
 name: contineous integration
 on: push
 jobs:
-  test:
+  pahilo:
     runs-on: ubuntu-latest
     steps:
       - name: get code
@@ -14,3 +14,9 @@ jobs:
         run: npm install got@latest
       - name : Run Test
         run: npm test
+deploy:
+  needs: pahilo
+  runs-on: ubuntu-latest
+    steps: 
+      - name: get code
+        uses: actions/checkout@v3
